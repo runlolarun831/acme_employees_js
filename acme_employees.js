@@ -22,7 +22,7 @@ spacer('findEmployeeByName Moe')
 // given a name and array of employees, return employee
 
 function findEmployeeByName(name1, funnyGuys) { ///////DONE//////////
-  const employeeFound = funnyGuys.filter(employee => employee.name === name1);
+  const employeeFound = funnyGuys.find(employee => employee.name === name1);
   return employeeFound[0];
 }
 console.log(findEmployeeByName('moe', employees));//{ id: 1, name: 'moe' }
